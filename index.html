@@ -5,43 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FDND Visitekaartje</title>
   <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
 </head>
 <body>
 
-<article>
-  <header>
-    <h1>Jane Doe</h1>
-    <p><em>Creative Frontend Developer in spé</em></p>
-    <button>
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
-        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-        <path d="M4 8v-2a2 2 0 0 1 2 -2h2" />
-        <path d="M4 16v2a2 2 0 0 0 2 2h2" />
-        <path d="M16 4h2a2 2 0 0 1 2 2v2" />
-        <path d="M16 20h2a2 2 0 0 0 2 -2v-2" />
-      </svg>
-
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="red" fill="none" stroke-linecap="round" stroke-linejoin="round">
-        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-        <path d="M15 19v-2a2 2 0 0 1 2 -2h2" />
-        <path d="M15 5v2a2 2 0 0 0 2 2h2" />
-        <path d="M5 15h2a2 2 0 0 1 2 2v2" />
-        <path d="M5 9h2a2 2 0 0 0 2 -2v-2" />
-      </svg>
-    </button>
-
-  </header>
-  
-  <img src="assets/creative-coder.png" alt="Creative Coder">
-
-  <dl>
-    <dt>HTML</dt><dd>🏆🏆🏆</dd>
-    <dt>CSS</dt><dd>🏆🏆</dd>
-    <dt>JavaScript</dt><dd>🏆🏆🏆🏆</dd>
-  </dl>
-  
-  <p>Het WEB is te gek! <br> Met HTML, CSS en JavaScript kan ik vette, interactieve web apps maken.</p>
-</article>
+  <section class="wrapper">
+    
+    <!-- BEGIN: card -->
+    <div class="card" data-effect="zoom">
+      <button class="card__save  js-save" type="button">
+        <i class="fa  fa-bookmark"></i>
+       </button>
+      <figure  class="card__image">
+        <img src="assets/starwars_diorama.jpg" alt="Short description">
+      </figure>
+      <div class="card__body">
+        <h3 class="card__name">THOMAS</h3>
+        <p class="card__job">Nerd bij de Mediamarkt</p>
+        <p class="card__bio">Servicemedewerker bij de Mediamarkt, trotse hondeneigenaar, amateur tennisser en een passie voor IT.</p>
+      </div>
+      <div class="card__footer">
+        <p class="card__date">Feb 28 2000</p>
+      </div>
+      <a class="text__link" href="text.html"><p class="card__link">Meer weten</p></a>
+    </div>
+    <!-- END: card -->
+    
+  </section>
 
   <script src="./scripts/script.js"></script>
 </body>
