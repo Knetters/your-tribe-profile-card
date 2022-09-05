@@ -126,7 +126,7 @@ body {
 }
 
 .card:hover {
-  box-shadow: 0 40px 130px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 40px 130px rgba(0, 0, 0, 0.8);
   -webkit-transform: scale(1.1, 1.1);
   transform: scale(1.1, 1.1);
 }
@@ -270,10 +270,11 @@ body {
   font-size: 16;
   font-weight: var(--fontLight);
   text-align: center;
-  letter-spacing: 0.35rem;
+  letter-spacing: 0.15rem;
   color: whitesmoke;
   -webkit-transition: all var(--speed) ease;
   transition: all var(--speed) ease;
+  font-weight: 500;
 }
 
 .card__bio {
