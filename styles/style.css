@@ -129,6 +129,7 @@ body {
   box-shadow: 0 40px 130px rgba(0, 0, 0, 0.8);
   -webkit-transform: scale(1.1, 1.1);
   transform: scale(1.1, 1.1);
+  border: solid #ffdb4d 3px;
 }
 
 .card__save {
@@ -246,6 +247,10 @@ body {
   justify-self: center;
   margin-top: 20px;
   opacity: 0.5;
+}
+
+.card__link:hover {
+  color: #ffdb4d !important;
 }
 
 .text__link {
