@@ -232,12 +232,11 @@ body {
 }
 
 .card__name {
-  align-self: center;
-  justify-self: center;
-  margin-bottom: 2px;
+  text-align: center;
   color: white;
   font-size: 30px;
   font-family: 3d-float;
+  margin-bottom: 2px;
 }
 
 .card__link {
@@ -247,25 +246,16 @@ body {
   justify-self: center;
   margin-top: 20px;
   opacity: 0.5;
+  transition: all .2s ease-in-out;
 }
 
 .card__link:hover {
   color: #ffdb4d !important;
+  transform: scale(1.2);
 }
 
 .text__link {
   text-decoration: none;
-  transition: 0.2s;
-}
-
-.text__link:hover {
-  font-size: 20px;
-}
-
-.card:hover .card__name {
-  background: -webkit-linear-gradient(white, #c1c1c1);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .card:hover .card__link {
@@ -295,7 +285,6 @@ body {
   margin: 22px 0 16px 0;
   font-size: var(--fontMedium);
   font-weight: var(--fontLight);
-  /*text-shadow: 0 0.5px 1px rgba(0, 0, 0, 0.35);*/
   color: rgba(255, 255, 255, 0.65);
   opacity: 0;
   -webkit-transition: all var(--speed) ease;
