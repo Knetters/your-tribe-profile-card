@@ -250,6 +250,11 @@ body {
 
 .text__link {
   text-decoration: none;
+  transition: 0.2s;
+}
+
+.text__link:hover {
+  font-size: 20px;
 }
 
 .card:hover .card__name {
