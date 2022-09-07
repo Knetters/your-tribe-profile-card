@@ -1,366 +1,85 @@
-/* GLOBAL VARIABLES */
-:root {
-  --font: "Roboto", sans-serif;
-  --fontOrigin: 1rem;
-  /* 16px */
-  --fontSmall: 0.625em;
-  /* 10px */
-  --fontMedium: 0.875em;
-  /* 14px */
-  --fontNormal: 1em;
-  /* 16px */
-  --fontLarge: 1.375em;
-  /* 22px */
-  --fontLight: 100;
-  --fontRegular: 400;
-  --speed: 0.65s;
-}
-
-@keyframes zoom {
-  from {
-    object-position: 0 50%;
-  }
-
-  to {
-    object-position: 100% 50%;
-  }
-}
-
-@keyframes blur {
-  from {
-    -webkit-transform: scale(1, 1);
-    transform: scale(1, 1);
-  }
-
-  to {
-    -webkit-transform: scale(1.5, 1.5);
-    transform: scale(2, 2);
-  }
-}
-
-* {
-  border: 0;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
-  font-family: var(--font);
-  font-weight: var(--fontOrigin);
-  font-size: 1rem;
-  line-height: 1.2;
-  letter-spacing: 0.005rem;
-  -webkit-font-smoothing: subpixel-antialiased;
-  background-color: #f1f1f1;
+  font-family: 'Times New Roman', serif;
 }
 
-.wrapper {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, 1fr);
-  grid-template-rows: auto;
-  grid-template-areas:
-    "menu menu menu"
-    ". card .";
-  width: 100vw;
-  min-height: 100vh;
-  padding-top: 0px;
-  padding-bottom: 40px;
-  margin-top: -100px;
+#slidein1 {
+  float:right;
+  animation-duration: 0.5s;
+  animation-name: slidein1;
+}
+@keyframes slidein1 {
+  from {
+      margin-right: -300%;
+  }
+  to {
+      margin-right: 0%;
+  }
 }
 
-.menu {
-  grid-area: menu;
-  align-self: end;
+#slidein2 {
+  float:left;
+  animation-duration: 0.5s;
+  animation-name: slidein2;
+}
+@keyframes slidein2 {
+  from {
+      margin-left: -300%;
+  }
+  to {
+      margin-left: 0%;
+  }
 }
 
-.menu__list {
-  text-align: center;
-}
-
-.menu__item {
-  position: relative;
-  display: inline-block;
-  padding: 10px 20px;
-  font-size: var(--fontMedium);
-  font-weight: var(--fontRegular);
-  text-transform: uppercase;
-  color: #a9a9a9;
-  cursor: pointer;
-  -webkit-transition: all var(--speed) ease;
-  transition: all var(--speed) ease;
-}
-
-.menu__item::after {
-  content: "";
-  display: block;
-  width: 0;
-  height: 2px;
-  margin-top: 6px;
-  background: rgba(100, 100, 250, 1);
-  -webkit-transition: all var(--speed) ease;
-  transition: all var(--speed) ease;
-}
-
-.menu__item:hover {
-  color: rgba(150, 150, 255, 1);
-}
-
-.menu__item.active {
-  color: rgba(100, 100, 250, 1);
-}
-
-.menu__item.active::after {
+.main {
   width: 100%;
 }
 
-.card {
-  position: relative;
-  grid-area: card;
-  align-self: center;
-  justify-self: center;
-  overflow: hidden;
-  display: block;
-  width: 100%;
-  max-width: 250px;
-  height: 400px;
-  font-size: var(--fontOrigin);
-  border-radius: 8px;
-  box-shadow: 0 16px 60px rgba(0, 0, 0, 0.3);
-  cursor: pointer;
-  -webkit-transition: all var(--speed) ease;
-  transition: all var(--speed) ease;
+.card_box {
+  width: 20%;
+  margin-left: 40%;
+  margin-top: 200px;
 }
 
-.card:hover {
-  box-shadow: 0 40px 130px rgba(0, 0, 0, 0.8);
-  -webkit-transform: scale(1.1, 1.1);
-  transform: scale(1.1, 1.1);
-  border: solid #ffdb4d 3px;
+.vertical {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  margin: 0;
 }
 
-.card__save {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  display: block;
-  width: 35px;
-  height: 35px;
-  background: transparent;
-  border: 0;
-  opacity: 0;
-  border-radius: 3px;
-  -webkit-transition: all var(--speed) ease;
-  transition: all var(--speed) ease;
+.job_title {
+  font-size: 1.2em;
+  padding-bottom: 5px;
+  border-bottom: 1px solid;
 }
 
-.card__save:focus {
-  outline: 0;
-  background-color: rgba(255, 255, 255, 0);
+.bio_text {
+  font-size: 1em;
+  text-align: justify;
 }
 
-.card:hover .card__save {
-  opacity: 0.6;
+.name_box {
+  float: left;
+  width: 40%;
 }
 
-.card__save i {
-  font-size: 18px;
-  color: rgba(255, 255, 255, 0.6);
-  cursor: pointer;
-  -webkit-transition: all var(--speed) ease;
-  transition: all var(--speed) ease;
+.bio_box {
+  float: left;
+  width: 60%;
 }
 
-.card__save:hover i {
-  color: rgba(255, 255, 255, 0.8);
+h1 {
+  font-size: 5em;
 }
 
-.card__save:active,
-.card__save.active {
-  opacity: 1 !important;
+.birthdate {
+  margin-top: 80px;
+  font-size: 0.6em;
 }
 
-.card__save:active i,
-.card__save.active i {
-  color: white;
-}
-
-.card__image {
-  position: absolute;
-  top: 0;
-  left: 0;
+.blob_background {
+  height: 500px;
   z-index: -1;
-  overflow: hidden;
-  display: block;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5));
-}
-
-.card__image img {
-  -webkit-transform: scale(1.3, 1.3);
-  transform: scale(1.3, 1.3);
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 1;
-  -webkit-transition: all var(--speed) ease;
-  transition: all var(--speed) ease;
-  animation-name: zoom;
-  animation-duration: 30s;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-}
-
-.card:hover .card__image img {
-  -webkit-transform: scale(1, 1);
-  transform: scale(1, 1);
-  opacity: 0.5;
-}
-
-.card__header {
-  display: grid;
-  width: 100%;
-  height: 200px;
-}
-
-.card:hover .card__profile img {
-  -webkit-transform: scale(1, 1) translateZ(0);
-  transform: scale(1, 1) translateZ(0);
-}
-
-.card__body {
-  display: grid;
-  padding: 0 20px;
-  margin-top: 50px;
-}
-
-.card__name {
-  text-align: center;
-  color: white;
-  font-size: 30px;
-  font-family: 3d-float;
-  margin-bottom: 2px;
-}
-
-.card__link {
-  color: #f2f2f2;
-  text-decoration: none;
-  text-align: center;
-  justify-self: center;
-  margin-top: 20px;
-  opacity: 0.5;
-  transition: all .2s ease-in-out;
-}
-
-.card__link:hover {
-  color: #ffdb4d !important;
-  transform: scale(1.2);
-}
-
-.text__link {
-  text-decoration: none;
-}
-
-.card:hover .card__link {
-  opacity: 0.8;
-  color: bisque;
-}
-
-.card__job {
-  align-self: center;
-  justify-self: center;
-  display: inline-block;
-  font-size: 16;
-  font-weight: var(--fontLight);
-  text-align: center;
-  letter-spacing: 0.15rem;
-  color: whitesmoke;
-  -webkit-transition: all var(--speed) ease;
-  transition: all var(--speed) ease;
-  font-weight: 500;
-}
-
-.card__bio {
-  position: relative;
-  -webkit-transform: translateY(30%);
-  transform: translateY(30%);
-  display: block;
-  margin: 22px 0 16px 0;
-  font-size: var(--fontMedium);
-  font-weight: var(--fontLight);
-  color: rgba(255, 255, 255, 0.65);
-  opacity: 0;
-  -webkit-transition: all var(--speed) ease;
-  transition: all var(--speed) ease;
-}
-
-.card:hover .card__bio {
-  -webkit-transform: translateY(0);
-  transform: translateY(0);
-  opacity: 1;
-}
-
-.card__footer {
-  position: relative;
-  -webkit-transform: translateY(60%);
-  transform: translateY(60%);
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-areas: "date category";
-  padding: 10px 20px;
-  opacity: 0;
-  -webkit-transition: all var(--speed) ease;
-  transition: all var(--speed) ease;
-}
-
-.card:hover .card__footer {
-  -webkit-transform: translateY(0);
-  transform: translateY(0);
-  opacity: 1;
-}
-
-.card__date {
-  grid-area: date;
-  display: inline-block;
-  align-self: left;
-  justify-self: left;
-  font-size: var(--fontSmall);
-  font-weight: var(--fontLight);
-  text-transform: uppercase;
-  text-shadow: 0 0.5px 1px rgba(0, 0, 0, 0.45);
-  color: rgba(250, 250, 250, 0.4);
-}
-
-/* MODIFIERS */
-.card[data-effect="blur"]:hover .card__image img {
-  -webkit-filter: blur(3px);
-  filter: blur(3px);
-}
-
-.card[data-effect="blur"] .card__image img {
-  animation-name: blur;
-}
-
-.card[data-effect="color"]:hover {
-  -webkit-transform: scale(1, 1);
-  transform: scale(1, 1);
-  box-shadow: 0 40px 260px rgba(255, 0, 0, 0.1), 0 40px 130px rgba(250, 100, 100, 0.2), -80px -40px 230px rgba(0, 200, 250, 0.15), 80px 40px 230px rgba(120, 120, 255, 0.15);
-}
-
-.card[data-effect="color"] .card__image {
-  background: linear-gradient(to bottom, rgba(20, 20, 100, 1), rgba(255, 100, 100, 0.5))
-}
-
-.card[data-effect="color"]:hover .card__image img {
-  opacity: 0.8;
-}
-
-.card[data-effect="color"]:hover .card__profile img {
-  -webkit-filter: grayscale(50%) contrast(80%) brightness(1.6);
-  filter: grayscale(50%) contrast(80%) brightness(1.6);
-  mix-blend-mode: normal;
+  position: absolute;
+  left: 30%;
+  top: 30%;
 }
