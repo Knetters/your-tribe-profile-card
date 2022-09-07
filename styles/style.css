@@ -1,32 +1,38 @@
 body {
   font-family: 'Times New Roman', serif;
+  color: white;
+  background-color: black;
 }
 
 #slidein1 {
-  float:right;
+  float: right;
   animation-duration: 0.5s;
   animation-name: slidein1;
 }
+
 @keyframes slidein1 {
   from {
-      margin-right: -300%;
+    margin-right: -300%;
   }
+
   to {
-      margin-right: 0%;
+    margin-right: 0%;
   }
 }
 
 #slidein2 {
-  float:left;
+  float: left;
   animation-duration: 0.5s;
   animation-name: slidein2;
 }
+
 @keyframes slidein2 {
   from {
-      margin-left: -300%;
+    margin-left: -300%;
   }
+
   to {
-      margin-left: 0%;
+    margin-left: 0%;
   }
 }
 
@@ -47,7 +53,7 @@ body {
 }
 
 .job_title {
-  font-size: 1.2em;
+  font-size: 1.4em;
   padding-bottom: 5px;
   border-bottom: 1px solid;
 }
@@ -55,6 +61,11 @@ body {
 .bio_text {
   font-size: 1em;
   text-align: justify;
+}
+
+.slide {
+  display: block;
+  position: absolute;
 }
 
 .name_box {
