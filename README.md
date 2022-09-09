@@ -7,8 +7,12 @@ ________________________________________________________________________________
 
 :page_with_curl: Dit project is gemaakt met de volgende talen:
 
-:triangular_flag_on_post: HTML<br>
-:triangular_flag_on_post: CSS<br>
-:triangular_flag_on_post: JavaScript<br>
+> :triangular_flag_on_post: HTML<br>
+> :triangular_flag_on_post: CSS<br>
+> :triangular_flag_on_post: JavaScript<br>
 
 :memo: De oude versie van mijn visitekaartje is te vinden in de map Version 1.
+
+
+
+-T
