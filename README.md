@@ -1,4 +1,4 @@
-Hallo! :raised_hand:
+Captains log, stardate 2022:
 
 Dit is de eerste opdracht van de opleiding FNDN in Amsterdam. Ik heb twee visitekaartjes gemaakt.
 _________________________________________________________________________________________________
@@ -15,5 +15,5 @@ ________________________________________________________________________________
 
 
 ```
--T
+Door Thomas. S
 ```
