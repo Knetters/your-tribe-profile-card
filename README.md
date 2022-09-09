@@ -7,8 +7,8 @@ ________________________________________________________________________________
 
 :page_with_curl: Dit project is gemaakt met de volgende talen:
 
-:triangular_flag_on_post: HTML
-:triangular_flag_on_post: CSS
-:triangular_flag_on_post: JavaScript
+:triangular_flag_on_post: HTML<br>
+:triangular_flag_on_post: CSS<br>
+:triangular_flag_on_post: JavaScript<br>
 
 
