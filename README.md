@@ -11,4 +11,4 @@ ________________________________________________________________________________
 :triangular_flag_on_post: CSS<br>
 :triangular_flag_on_post: JavaScript<br>
 
-
+:memo: De oude versie van mijn visitekaartje is te vinden in de map Version 1.
