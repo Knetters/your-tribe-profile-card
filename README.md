@@ -1,2 +1,8 @@
-> Fork deze leertaak en ga aan de slag. Onderstaande outline ga je gedurende deze taak in jouw eigen GitHub omgeving uitwerken. De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
+Hallo! :open_hands:
+
+Dit is de eerste opdracht van de opleiding FNDN in Amsterdam. Ik heb twee visitekaartjes gemaakt.
+
+
+:computer: Je kan mijn definitieve visitekaartje vinden op: https://thomasscheepers.github.io/your-tribe-profile-card/
+
 
