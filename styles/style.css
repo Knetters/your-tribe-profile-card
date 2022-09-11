@@ -1,3 +1,14 @@
+#container{
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+
+.slide{
+  display: block;
+  position: absolute;
+}
+
 body {
   font-family: Georgia, serif;
   color: white;
@@ -10,6 +21,12 @@ body {
   animation-name: slidein1;
 }
 
+#slidein2 {
+  float: left;
+  animation-duration: 0.5s;
+  animation-name: slidein2;
+}
+
 @keyframes slidein1 {
   from {
     margin-right: -300%;
@@ -18,12 +35,6 @@ body {
   to {
     margin-right: 0%;
   }
-}
-
-#slidein2 {
-  float: left;
-  animation-duration: 0.5s;
-  animation-name: slidein2;
 }
 
 @keyframes slidein2 {
