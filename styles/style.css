@@ -1,5 +1,5 @@
 body {
-  font-family: 'Times New Roman', serif;
+  font-family: Georgia, serif;
   color: white;
   background-color: black;
 }
@@ -61,6 +61,7 @@ body {
 .bio_text {
   font-size: 1em;
   text-align: justify;
+  font-weight: 500;
 }
 
 .slide {
@@ -93,4 +94,16 @@ h1 {
   position: absolute;
   left: 30%;
   top: 30%;
+}
+
+.pulse {
+  -webkit-animation: pulsate 1.5s ease-out;
+  -webkit-animation-iteration-count: infinite; 
+  opacity: 0.3;
+}
+
+@-webkit-keyframes pulsate {
+  0% { opacity: 0; }
+  50% { opacity: 1.0; }
+  100% { opacity: 0; }
 }
