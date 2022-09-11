@@ -10,9 +10,12 @@
 }
 
 body {
-  font-family: Georgia, serif;
+  font-family: Audiowide, serif;
   color: white;
+  background-image: url("../assets/bgrnd.jpg");
   background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #slidein1 {
