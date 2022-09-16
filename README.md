@@ -13,7 +13,7 @@ ________________________________________________________________________________
 
 :memo: De oude versie van mijn visitekaartje is te vinden in de map Version 1.
 
-![image](https://user-images.githubusercontent.com/60781257/189321883-4b22d9de-917f-4f9c-8003-b1cb83674960.png)
+![image](https://user-images.githubusercontent.com/60781257/190587541-21f9f0eb-9199-4479-870b-e2c02195fdbf.png)
 
 ```
 Door Thomas. S
